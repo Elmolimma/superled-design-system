@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="fi">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Varastopalvelu sähköurakoitsijoille — SuperLED</title>
+  <style>
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    body { font-family: Arial, Helvetica, sans-serif; background: #F5F3EE; color: #3A3A3A; }
+
+    /* Nav */
+    .nav { background: #3A3A3A; padding: 16px 32px; display: flex; align-items: center; gap: 16px; }
+    .nav-logo { font-family: "Arial Black", Arial, sans-serif; font-size: 20px; color: #FFD527; }
+
+    /* Hero */
+    .hero { background: #3A3A3A; padding: 80px 32px; text-align: center; }
+    .hero-eyebrow { font-size: 12px; letter-spacing: 0.12em; text-transform: uppercase; color: #FFD527; margin-bottom: 16px; }
+    .hero-title { font-family: "Arial Black", Arial, sans-serif; font-size: 48px; color: #FFFFFF; line-height: 1.1; margin-bottom: 24px; }
+    .hero-title span { color: #FFD527; }
+    .hero-sub { font-size: 18px; color: #E1DDD1; line-height: 1.6; max-width: 600px; margin: 0 auto 40px; }
+    .btn-cta { display: inline-block; background: #FFD527; color: #3A3A3A; font-weight: bold; font-size: 18px; padding: 16px 48px; border-radius: 4px; text-decoration: none; }
+
+    /* Stats */
+    .stats { background: #FFD527; padding: 40px 32px; }
+    .stats-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 24px; max-width: 900px; margin: 0 auto; text-align: center; }
+    .stat-number { font-family: "Arial Black", Arial, sans-serif; font-size: 42px; color: #3A3A3A; }
+    .stat-label { font-size: 14px; color: #5F564E; margin-top: 4px; }
+
+    /* Benefits */
+    .benefits { padding: 80px 32px; max-width: 1100px; margin: 0 auto; }
+    .section-title { font-family: "Arial Black", Arial, sans-serif; font-size: 32px; color: #3A3A3A; margin-bottom: 48px; text-align: center; }
+    .benefits-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 24px; }
+    .benefit-card { background: #FFFFFF; border-radius: 12px; padding: 32px; border-left: 4px solid #FFD527; box-shadow: 0 2px 8px rgba(0,0,0,0.06); }
+    .benefit-icon { font-size: 36px; margin-bottom: 16px; }
+    .benefit-title { font-family: "Arial Black", Arial, sans-serif; font-size: 18px; margin-bottom: 8px; }
+    .benefit-text { font-size: 15px; color: #5F564E; line-height: 1.6; }
+
+    /* How it works */
+    .how { background: #3A3A3A; padding: 80px 32px; }
+    .how-inner { max-width: 800px; margin: 0 auto; }
+    .how .section-title { color: #FFD527; }
+    .steps { display: flex; flex-direction: column; gap: 24px; }
+    .step { display: flex; gap: 24px; align-items: flex-start; }
+    .step-num { background: #FFD527; color: #3A3A3A; font-family: "Arial Black", Arial, sans-serif; font-size: 20px; width: 48px; height: 48px; border-radius: 50%; display: flex; align-items: center; justify-content: center; flex-shrink: 0; }
+    .step-content h3 { color: #FFFFFF; font-size: 18px; margin-bottom: 6px; }
+    .step-content p { color: #E1DDD1; font-size: 15px; line-height: 1.6; }
+
+    /* CTA section */
+    .cta-section { padding: 80px 32px; text-align: center; }
+    .cta-section h2 { font-family: "Arial Black", Arial, sans-serif; font-size: 36px; margin-bottom: 16px; }
+    .cta-section p { font-size: 18px; color: #5F564E; margin-bottom: 40px; }
+
+    /* Footer */
+    .footer { background: #3A3A3A; padding: 32px; text-align: center; color: #5F564E; font-size: 13px; }
+    .footer strong { color: #FFD527; }
+
+    @media (max-width: 768px) {
+      .hero-title { font-size: 32px; }
+      .stats-grid { grid-template-columns: 1fr; }
+      .benefits-grid { grid-template-columns: 1fr; }
+    }
+  </style>
+</head>
+<body>
+
+  <nav class="nav">
+    <span class="nav-logo">SuperLED</span>
+  </nav>
+
+  <!-- Hero -->
+  <section class="hero">
+    <p class="hero-eyebrow">Sähköurakoitsijoille</p>
+    <h1 class="hero-title">Oikeat valaisimet<br><span>aina autossasi</span></h1>
+    <p class="hero-sub">Varastopalvelumme täyttää pakettiautoosi täsmälleen oikeat tuotteet — automaattisesti, ilman sitoutunutta pääomaa.</p>
+    <a href="#yhteydenotto" class="btn-cta">Ota yhteyttä — aloitus 2 päivässä</a>
+  </section>
+
+  <!-- Stats -->
+  <section class="stats">
+    <div class="stats-grid">
+      <div>
+        <div class="stat-number">0 €</div>
+        <div class="stat-label">Sitoutunut pääoma</div>
+      </div>
+      <div>
+        <div class="stat-number">2 pv</div>
+        <div class="stat-label">Käyttöönotto</div>
+      </div>
+      <div>
+        <div class="stat-number">~30%</div>
+        <div class="stat-label">Halvempi kuin tukku</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Benefits -->
+  <section class="benefits">
+    <h2 class="section-title">Miksi varastopalvelu?</h2>
+    <div class="benefits-grid">
+      <div class="benefit-card">
+        <div class="benefit-icon">📦</div>
+        <h3 class="benefit-title">Ota hyllystä, skannaa QR</h3>
+        <p class="benefit-text">Otat tuotteen hyllystä ja skannaat QR-koodin. Tilaus syntyy automaattisesti — ei manuaalista tilausta, ei unohduksia.</p>
+      </div>
+      <div class="benefit-card">
+        <div class="benefit-icon">🚐</div>
+        <h3 class="benefit-title">Oikeat tuotteet lähellä</h3>
+        <p class="benefit-text">Varastopalvelu täydennetään sinun työmaidesi tarpeiden mukaan. Turhat ajot kauppaan jäävät historiaan.</p>
+      </div>
+      <div class="benefit-card">
+        <div class="benefit-icon">💰</div>
+        <h3 class="benefit-title">Parempi hinta kuin tukusta</h3>
+        <p class="benefit-text">Ostat suoraan maahantuojalta ilman välikäsiä. Rekisteröityneenä urakoitsijana saat ~30% halvemman hinnaston.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- How it works -->
+  <section class="how">
+    <div class="how-inner">
+      <h2 class="section-title">Näin se toimii</h2>
+      <div class="steps">
+        <div class="step">
+          <div class="step-num">1</div>
+          <div class="step-content">
+            <h3>Ota yhteyttä</h3>
+            <p>Sovitaan tapaaminen. Kartoitetaan sinun työmaidesi yleisimmät tuotteet ja tarpeet.</p>
+          </div>
+        </div>
+        <div class="step">
+          <div class="step-num">2</div>
+          <div class="step-content">
+            <h3>Varaston pystytys</h3>
+            <p>Toimitamme tuotteet valmiiksi hyllyytetyillä QR-koodeilla. Käyttöönotto on valmis kahdessa päivässä.</p>
+          </div>
+        </div>
+        <div class="step">
+          <div class="step-num">3</div>
+          <div class="step-content">
+            <h3>Ota, skannaa, jatka töitä</h3>
+            <p>Otat tuotteen, skannaat QR:n — tilaus syntyy ja hylly täyttyy automaattisesti.</p>
+          </div>
+        </div>
+        <div class="step">
+          <div class="step-num">4</div>
+          <div class="step-content">
+            <h3>Lasku kuun lopussa</h3>
+            <p>Maksat vain mitä olet käyttänyt. Ei sitoutunutta pääomaa, ei ylimääräisiä riskejä.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA -->
+  <section class="cta-section" id="yhteydenotto">
+    <h2>Kiinnostuitko?</h2>
+    <p>Soita tai lähetä viesti — aloitus onnistuu jo tällä viikolla.</p>
+    <a href="tel:0453523705" class="btn-cta" style="margin-right:16px;">Soita 045-3523705</a>
+    <a href="mailto:asiakaspalvelu@superled.fi" class="btn-cta" style="background:#3A3A3A;color:#FFD527;">Lähetä sähköposti</a>
+  </section>
+
+  <footer class="footer">
+    <p><strong>SuperLED Oy</strong> &nbsp;|&nbsp; Pulkkisentie 23, 90440 Kempele &nbsp;|&nbsp; 045-3523705 &nbsp;|&nbsp; asiakaspalvelu@superled.fi</p>
+    <p style="margin-top:8px;">Y-tunnus: 2450813-2 &nbsp;|&nbsp; 100% kotimainen perheyritys</p>
+  </footer>
+
+</body>
+</html>

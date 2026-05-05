@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="fi">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>SuperLED — Urakoitsijauutiskirje</title>
+</head>
+<body style="margin:0;padding:0;background:#F5F3EE;font-family:Arial,Helvetica,sans-serif;">
+
+  <!-- Wrapper -->
+  <table width="100%" cellpadding="0" cellspacing="0" style="background:#F5F3EE;padding:24px 0;">
+    <tr>
+      <td align="center">
+        <table width="600" cellpadding="0" cellspacing="0" style="max-width:600px;background:#FFFFFF;border-radius:8px;overflow:hidden;">
+
+          <!-- Header -->
+          <tr>
+            <td style="background:#3A3A3A;padding:24px 32px;text-align:left;">
+              <span style="font-family:'Arial Black',Arial,sans-serif;font-size:22px;color:#FFD527;letter-spacing:-0.02em;">SuperLED</span>
+              <span style="font-family:Arial,sans-serif;font-size:12px;color:#F5F3EE;margin-left:12px;letter-spacing:0.1em;text-transform:uppercase;">Urakoitsija</span>
+            </td>
+          </tr>
+
+          <!-- Hero -->
+          <tr>
+            <td style="background:#FFD527;padding:32px 32px 24px;">
+              <p style="margin:0 0 8px;font-family:'Arial Black',Arial,sans-serif;font-size:28px;color:#3A3A3A;line-height:1.2;">
+                {{OTSIKKO}}
+              </p>
+              <p style="margin:0;font-family:Arial,sans-serif;font-size:16px;color:#3A3A3A;line-height:1.5;">
+                {{ALAOTSIKKO}}
+              </p>
+            </td>
+          </tr>
+
+          <!-- Body -->
+          <tr>
+            <td style="padding:32px;">
+
+              <p style="margin:0 0 16px;font-family:Arial,sans-serif;font-size:16px;color:#3A3A3A;line-height:1.6;">
+                {{INTRO_TEKSTI}}
+              </p>
+
+              <!-- Tuotenosto 1 -->
+              <table width="100%" cellpadding="0" cellspacing="0" style="margin:24px 0;border:1px solid #E1DDD1;border-radius:8px;overflow:hidden;">
+                <tr>
+                  <td style="padding:20px 24px;border-left:4px solid #FFD527;">
+                    <p style="margin:0 0 4px;font-family:'Arial Black',Arial,sans-serif;font-size:16px;color:#3A3A3A;">{{TUOTE_1_NIMI}}</p>
+                    <p style="margin:0 0 8px;font-family:Arial,sans-serif;font-size:14px;color:#5F564E;">{{TUOTE_1_TEKNISET}}</p>
+                    <p style="margin:0;font-family:Arial,sans-serif;font-size:20px;font-weight:bold;color:#3A3A3A;">
+                      {{TUOTE_1_HINTA}} <span style="font-size:13px;color:#5F564E;font-weight:normal;">+ alv</span>
+                    </p>
+                  </td>
+                </tr>
+              </table>
+
+              <!-- Tuotenosto 2 -->
+              <table width="100%" cellpadding="0" cellspacing="0" style="margin:24px 0;border:1px solid #E1DDD1;border-radius:8px;overflow:hidden;">
+                <tr>
+                  <td style="padding:20px 24px;border-left:4px solid #FFD527;">
+                    <p style="margin:0 0 4px;font-family:'Arial Black',Arial,sans-serif;font-size:16px;color:#3A3A3A;">{{TUOTE_2_NIMI}}</p>
+                    <p style="margin:0 0 8px;font-family:Arial,sans-serif;font-size:14px;color:#5F564E;">{{TUOTE_2_TEKNISET}}</p>
+                    <p style="margin:0;font-family:Arial,sans-serif;font-size:20px;font-weight:bold;color:#3A3A3A;">
+                      {{TUOTE_2_HINTA}} <span style="font-size:13px;color:#5F564E;font-weight:normal;">+ alv</span>
+                    </p>
+                  </td>
+                </tr>
+              </table>
+
+              <!-- CTA -->
+              <table width="100%" cellpadding="0" cellspacing="0" style="margin:32px 0 0;">
+                <tr>
+                  <td align="center">
+                    <a href="{{CTA_LINKKI}}" style="display:inline-block;background:#FFD527;color:#3A3A3A;font-family:Arial,sans-serif;font-weight:bold;font-size:16px;padding:14px 40px;border-radius:4px;text-decoration:none;letter-spacing:0.04em;">
+                      {{CTA_TEKSTI}}
+                    </a>
+                  </td>
+                </tr>
+              </table>
+
+            </td>
+          </tr>
+
+          <!-- Info bar -->
+          <tr>
+            <td style="background:#F5F3EE;padding:20px 32px;">
+              <table width="100%" cellpadding="0" cellspacing="0">
+                <tr>
+                  <td style="font-family:Arial,sans-serif;font-size:13px;color:#5F564E;text-align:center;">
+                    Ennen klo 14 tilatut lähtee samana päivänä &nbsp;|&nbsp; Yli 80 000 tilausta &nbsp;|&nbsp; Suora maahantuoja
+                  </td>
+                </tr>
+              </table>
+            </td>
+          </tr>
+
+          <!-- Footer -->
+          <tr>
+            <td style="background:#3A3A3A;padding:24px 32px;">
+              <p style="margin:0 0 8px;font-family:Arial,sans-serif;font-size:13px;color:#F5F3EE;">
+                <strong style="color:#FFD527;">SuperLED Oy</strong> &nbsp;|&nbsp;
+                Pulkkisentie 23, 90440 Kempele &nbsp;|&nbsp;
+                045-3523705 &nbsp;|&nbsp;
+                asiakaspalvelu@superled.fi
+              </p>
+              <p style="margin:0;font-family:Arial,sans-serif;font-size:11px;color:#5F564E;">
+                Et halua enää viestejä? <a href="{{UNSUBSCRIBE}}" style="color:#5F564E;">Peruuta tilaus</a>
+              </p>
+            </td>
+          </tr>
+
+        </table>
+      </td>
+    </tr>
+  </table>
+
+</body>
+</html>

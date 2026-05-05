@@ -1,0 +1,98 @@
+/* SuperLED Oy — Card Components */
+
+/* Base card */
+.card {
+  background: var(--color-bg-card);
+  border-radius: var(--radius-md);
+  box-shadow: var(--shadow-sm);
+  padding: var(--space-6);
+  overflow: hidden;
+}
+
+/* Product card */
+.card-product {
+  background: var(--color-white);
+  border-radius: var(--radius-md);
+  box-shadow: var(--shadow-sm);
+  transition: box-shadow 0.2s ease, transform 0.2s ease;
+  overflow: hidden;
+}
+
+.card-product:hover {
+  box-shadow: var(--shadow-lg);
+  transform: translateY(-2px);
+}
+
+.card-product__image {
+  width: 100%;
+  aspect-ratio: 1 / 1;
+  object-fit: cover;
+  background: var(--color-cream);
+}
+
+.card-product__body {
+  padding: var(--space-4);
+}
+
+.card-product__name {
+  font-family: var(--font-heading);
+  font-size: var(--text-base);
+  color: var(--color-heading);
+  margin-bottom: var(--space-2);
+}
+
+.card-product__price {
+  font-family: var(--font-body);
+  font-size: var(--text-xl);
+  font-weight: var(--weight-bold);
+  color: var(--color-charcoal);
+}
+
+.card-product__price-old {
+  font-size: var(--text-sm);
+  color: var(--color-secondary-text);
+  text-decoration: line-through;
+  margin-left: var(--space-2);
+}
+
+/* Feature/benefit card (landing pages) */
+.card-benefit {
+  background: var(--color-cream);
+  border-radius: var(--radius-lg);
+  padding: var(--space-8);
+  border-left: 4px solid var(--color-yellow);
+}
+
+.card-benefit__icon {
+  font-size: 32px;
+  margin-bottom: var(--space-4);
+}
+
+.card-benefit__title {
+  font-family: var(--font-heading);
+  font-size: var(--text-xl);
+  color: var(--color-charcoal);
+  margin-bottom: var(--space-2);
+}
+
+.card-benefit__text {
+  font-family: var(--font-body);
+  font-size: var(--text-base);
+  color: var(--color-secondary-text);
+  line-height: var(--leading-normal);
+}
+
+/* Highlight/promo card */
+.card-promo {
+  background: var(--color-charcoal);
+  color: var(--color-white);
+  border-radius: var(--radius-lg);
+  padding: var(--space-8);
+}
+
+.card-promo__title {
+  font-family: var(--font-heading);
+  font-size: var(--text-2xl);
+  color: var(--color-yellow);
+  margin-bottom: var(--space-3);
+}

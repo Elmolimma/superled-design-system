@@ -1,0 +1,35 @@
+/* SuperLED Oy — Color Tokens */
+
+:root {
+  /* Primary */
+  --color-yellow: #FFD527;
+  --color-charcoal: #3A3A3A;
+
+  /* Neutrals */
+  --color-cream: #F5F3EE;
+  --color-beige: #E1DDD1;
+  --color-brown-gray: #5F564E;
+
+  /* Accents */
+  --color-orange: #FF7D12;
+  --color-red: #B72A2A;
+  --color-green: #A6BC25;
+
+  /* Base */
+  --color-white: #FFFFFF;
+  --color-black: #000000;
+
+  /* Semantic aliases */
+  --color-cta-bg: var(--color-yellow);
+  --color-cta-text: var(--color-charcoal);
+  --color-heading: var(--color-charcoal);
+  --color-body: var(--color-charcoal);
+  --color-bg-page: var(--color-cream);
+  --color-bg-card: var(--color-white);
+  --color-bg-dark: var(--color-charcoal);
+  --color-accent-urgent: var(--color-orange);
+  --color-accent-discount: var(--color-red);
+  --color-accent-eco: var(--color-green);
+  --color-divider: var(--color-beige);
+  --color-secondary-text: var(--color-brown-gray);
+}

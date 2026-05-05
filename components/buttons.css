@@ -1,0 +1,66 @@
+/* SuperLED Oy — Button Components */
+
+.btn {
+  display: inline-block;
+  font-family: var(--font-body);
+  font-weight: var(--weight-bold);
+  text-decoration: none;
+  border: none;
+  cursor: pointer;
+  border-radius: var(--radius-sm);
+  padding: var(--space-3) var(--space-8);
+  font-size: var(--text-base);
+  letter-spacing: var(--tracking-wide);
+  transition: opacity 0.15s ease, transform 0.1s ease;
+}
+
+.btn:hover {
+  opacity: 0.88;
+  transform: translateY(-1px);
+}
+
+.btn:active {
+  transform: translateY(0);
+}
+
+/* Primary — keltainen CTA */
+.btn-primary {
+  background: var(--color-yellow);
+  color: var(--color-charcoal);
+}
+
+/* Secondary — tumma */
+.btn-dark {
+  background: var(--color-charcoal);
+  color: var(--color-white);
+}
+
+/* Outline */
+.btn-outline {
+  background: transparent;
+  color: var(--color-charcoal);
+  border: 2px solid var(--color-charcoal);
+}
+
+/* Urgent — oranssi */
+.btn-urgent {
+  background: var(--color-orange);
+  color: var(--color-white);
+}
+
+/* Sizes */
+.btn-sm {
+  padding: var(--space-2) var(--space-5);
+  font-size: var(--text-sm);
+}
+
+.btn-lg {
+  padding: var(--space-4) var(--space-12);
+  font-size: var(--text-xl);
+}
+
+/* Email-safe inline style version (for reference):
+   background:#FFD527; color:#3A3A3A; padding:12px 32px;
+   font-family:Arial,sans-serif; font-weight:bold;
+   text-decoration:none; border-radius:4px; display:inline-block;
+*/
